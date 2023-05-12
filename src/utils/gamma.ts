@@ -19,7 +19,7 @@ const gamma = () => {
 
     for (let wine of wines) {
       const { Ash, Hue, Magnesium }  = wine;
-      gammaValue.push( (Ash * Hue) / Magnesium);
+      gammaValue.push( parseFloat( ((Ash * Hue) / Magnesium).toFixed(3) ));
     }
 
     let [mean, median, mode] = CalculateMeanMediamMode(gammaValue);

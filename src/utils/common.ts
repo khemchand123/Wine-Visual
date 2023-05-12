@@ -16,9 +16,9 @@ export function CalculateMeanMediamMode(list : number[]){
 
     //checking list is even or odd for medium
     if(length % 2 == 0){
-        median = (list[(length/2)-1] +  list[length/2]) / 2.0;
+        median = (list[(length/2)-1] +  list[length/2]) / 2;
     } else {
-        median = list[Math.floor(length/2)] / 2.0;
+        median = list[Math.floor(length/2)];
     }
     let mode : number = modeHelper(list);
     return [mean.toFixed(3), median.toFixed(3), mode.toFixed(3)];
